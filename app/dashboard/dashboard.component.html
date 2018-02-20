@@ -1,0 +1,24 @@
+<div>
+    <label>Welcome: {{concatName()}}</label>
+    <div>
+        <label>Change First Name:</label>
+        <input [(ngModel)]='data.fName'/>
+    </div>
+
+    <div>
+        Seed Value:
+        <p>
+            Child First Name: {{childNameParam}}
+        </p>
+        <p>
+            Child Last Name: {{childLastNameParam}}
+        </p>
+    </div>
+
+    <div>
+        <app-dashboard-child [childFirstName]='childNameParam'
+        [childLastName]='childLastNameParam' (outValue)="childEventHandler($event)"></app-dashboard-child>
+    </div>
+  
+</div>
+

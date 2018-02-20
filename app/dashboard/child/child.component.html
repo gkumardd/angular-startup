@@ -1,0 +1,13 @@
+<div>
+    <p>
+        This is a child for dashboard, use it only in dashboard.
+    </p>
+    <div>
+        <p>
+            value passed from Parent is:
+            <input [(ngModel)]='childFirstName' />
+            <input [(ngModel)]='childLastName'/> 
+            <button value="Submit" (click)='onChanged()'>Submit</button>
+        </p>
+    </div>
+</div>
